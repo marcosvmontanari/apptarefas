@@ -9,8 +9,8 @@ const btnProximaSemana = document.getElementById('btnProximaSemana');
 const navegacaoSemanal = document.getElementById('navegacaoSemanal');
 const resultado = document.getElementById('resultado');
 
-const API_EXECUCOES = 'http://localhost:3000/execucoes';
-const API_RESPONSAVEIS = 'http://localhost:3000/responsaveis';
+const API_EXECUCOES = '/execucoes';
+const API_RESPONSAVEIS = '/responsaveis';
 
 let responsaveisGlobais = [];
 let salvandoTarefas = new Set();

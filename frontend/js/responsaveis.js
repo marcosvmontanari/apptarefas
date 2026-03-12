@@ -2,7 +2,7 @@ const formResponsavel = document.getElementById('formResponsavel');
 const inputNome = document.getElementById('nome');
 const listaResponsaveis = document.getElementById('listaResponsaveis');
 
-const API_URL = 'http://localhost:3000/responsaveis';
+const API_URL = "/responsaveis";
 
 let editandoId = null;
 

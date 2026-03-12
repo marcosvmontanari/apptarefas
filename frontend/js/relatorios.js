@@ -3,7 +3,7 @@ const dataInicio = document.getElementById('dataInicio');
 const dataFim = document.getElementById('dataFim');
 const resultado = document.getElementById('resultado');
 
-const API_RELATORIOS = 'http://localhost:3000/relatorios';
+const API_RELATORIOS = '/relatorios';
 
 function mostrarErro(titulo, texto = '') {
     return Swal.fire({

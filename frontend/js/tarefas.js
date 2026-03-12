@@ -3,7 +3,7 @@ const inputNome = document.getElementById('nome');
 const listaTarefas = document.getElementById('listaTarefas');
 const checkboxesDias = document.querySelectorAll('input[name="dias_semana"]');
 
-const API_URL = 'http://localhost:3000/tarefas';
+const API_URL = '/tarefas';
 
 let editandoId = null;
 
