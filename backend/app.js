@@ -12,17 +12,24 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Servir arquivos estáticos do frontend
+/* =========================
+   SERVIR FRONTEND
+========================= */
+
 app.use('/css', express.static(path.join(__dirname, '../frontend/css')));
 app.use('/js', express.static(path.join(__dirname, '../frontend/js')));
 app.use('/pages', express.static(path.join(__dirname, '../frontend/pages')));
 
-// Página inicial do site
+/* Página inicial */
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend/pages/index.html'));
 });
 
-// Rotas da API
+/* =========================
+   ROTAS DA API
+========================= */
+
 app.use('/responsaveis', responsaveisRoutes);
 app.use('/tarefas', tarefasRoutes);
 app.use('/execucoes', execucoesRoutes);
