@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas - App Tarefas</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/tarefas.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="./index.html" class="navbar-logo">App Tarefas</a>
+            <a href="./responsaveis.html" class="navbar-link">Responsáveis</a>
+            <a href="./tarefas.html" class="navbar-link">Tarefas</a>
+            <a href="./execucoes.html" class="navbar-link">Painel Diário</a>
+            <a href="./relatorios.html" class="navbar-link">Relatórios</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Cadastro de Tarefas</h1>
+
+        <form id="formTarefa">
+            <div class="campo">
+                <label for="nome">Nome da tarefa</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite a tarefa" required>
+            </div>
+
+            <div class="campo">
+                <label>Dias da semana</label>
+
+                <div class="grupo-dias">
+                    <label class="dia-item">
+                        <input type="checkbox" name="dias_semana" value="1">
+                        Segunda-feira
+                    </label>
+
+                    <label class="dia-item">
+                        <input type="checkbox" name="dias_semana" value="2">
+                        Terça-feira
+                    </label>
+
+                    <label class="dia-item">
+                        <input type="checkbox" name="dias_semana" value="3">
+                        Quarta-feira
+                    </label>
+
+                    <label class="dia-item">
+                        <input type="checkbox" name="dias_semana" value="4">
+                        Quinta-feira
+                    </label>
+
+                    <label class="dia-item">
+                        <input type="checkbox" name="dias_semana" value="5">
+                        Sexta-feira
+                    </label>
+
+                    <label class="dia-item">
+                        <input type="checkbox" name="dias_semana" value="6">
+                        Sábado
+                    </label>
+
+                    <label class="dia-item">
+                        <input type="checkbox" name="dias_semana" value="7">
+                        Domingo
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <hr>
+
+        <h2>Lista de Tarefas</h2>
+        <ul id="listaTarefas"></ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/tarefas.js"></script>
+</body>
+
+</html>

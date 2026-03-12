@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Relatórios - App Tarefas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/relatorios.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="./index.html" class="navbar-logo">App Tarefas</a>
+            <a href="./responsaveis.html" class="navbar-link">Responsáveis</a>
+            <a href="./tarefas.html" class="navbar-link">Tarefas</a>
+            <a href="./execucoes.html" class="navbar-link">Painel Diário</a>
+            <a href="./relatorios.html" class="navbar-link">Relatórios</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Relatório de Execuções</h1>
+
+        <div class="filtro">
+            <label>Data inicial</label>
+            <input type="date" id="dataInicio">
+
+            <label>Data final</label>
+            <input type="date" id="dataFim">
+
+            <button id="btnGerar">Gerar relatório</button>
+        </div>
+
+        <hr>
+
+        <div id="resultado">
+            <p>Escolha um período para gerar o relatório.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/relatorios.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Tarefas - App Tarefas</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/execucoes.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="./index.html" class="navbar-logo">App Tarefas</a>
+            <a href="./responsaveis.html" class="navbar-link">Responsáveis</a>
+            <a href="./tarefas.html" class="navbar-link">Tarefas</a>
+            <a href="./execucoes.html" class="navbar-link">Painel Diário</a>
+            <a href="./relatorios.html" class="navbar-link">Relatórios</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Painel de Tarefas</h1>
+
+        <div class="filtro">
+            <label for="data">Selecione a data</label>
+            <input type="date" id="data">
+
+            <button id="btnHoje" type="button">Hoje</button>
+            <button id="btnCarregar" type="button">Carregar</button>
+        </div>
+
+        <div class="modos-visualizacao">
+            <button id="btnModoDiario" type="button" class="modo-btn ativo">Modo diário</button>
+            <button id="btnModoSemanal" type="button" class="modo-btn">Modo semanal</button>
+        </div>
+
+        <div id="navegacaoSemanal" class="navegacao-semanal oculto">
+            <button id="btnSemanaAnterior" type="button">← Semana anterior</button>
+            <button id="btnSemanaAtual" type="button">Hoje</button>
+            <button id="btnProximaSemana" type="button">Próxima semana →</button>
+        </div>
+
+        <hr>
+
+        <div id="resultado">
+            <p>Carregando tarefas...</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/execucoes.js"></script>
+</body>
+
+</html>
